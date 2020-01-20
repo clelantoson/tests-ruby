@@ -38,6 +38,7 @@ describe "temperature conversion functions" do
 
     it "converts body temperature" do
       expect(ctof(37)).to be_within(0.1).of(98.6)
+
       # Why do we need to use be_within?
       # See http://www.ruby-forum.com/topic/169330
       # and http://en.wikipedia.org/wiki/IEEE_754-2008
