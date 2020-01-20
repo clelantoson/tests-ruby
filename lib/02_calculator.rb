@@ -19,8 +19,8 @@ def multiply(*num)
 end
 
 def power(num,num2)
-   result= num**num2
-return result
+    result= num**num2
+    return result
 end
 
 def factorial(num)
@@ -29,8 +29,8 @@ def factorial(num)
     end
     value = 1
     while num > 0
-    value = value * num
-    num -= 1 
+        value = value * num
+        num -= 1 
     end
     return value 
 end

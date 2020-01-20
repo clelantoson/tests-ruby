@@ -1,22 +1,20 @@
 def who_is_bigger(a, b, c)
     tab = [a,b,c]
     tab.each do |letter|
-    if tab.include?(nil)
-        return "nil detected"
-
-    elsif a > b && a > c
-        return "a is bigger"
-    elsif b > a && b > c
-        return "b is bigger"
-    elsif c > a && c > b
-        return "c is bigger"
+        if tab.include?(nil)
+            return "nil detected"
+        elsif a > b && a > c
+            return "a is bigger"
+        elsif b > a && b > c
+            return "b is bigger"
+        elsif c > a && c > b
+            return "c is bigger"
         end
     end
 end
 
 def reverse_upcase_noLTA(string)
- new_str= string.reverse.upcase
- return new_str.delete("LTA")
+    return string.reverse.upcase.delete("LTA")
 end
 
 
